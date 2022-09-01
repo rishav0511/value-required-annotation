@@ -6,13 +6,10 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
-    
-    <context:property-placeholder location="file:src/student-info.properties"/>
 
+    <context:property-placeholder location="file:src/student-info.properties"/>
+    <context:annotation-config/>
     <bean id="student" class="com.rishav.valuerequiredannotation.Student">
-        <property name="name" value="${student.name}"></property>
-        <property name="hobby" value="${student.hobby}"></property>
-        <property name="course" value="${student.course}"></property>
     </bean>
 
 
